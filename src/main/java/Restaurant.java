@@ -51,14 +51,14 @@ public class Restaurant {
         menu.add(newItem);
     }
 
-//    public int totalOrderCost(ArrayList<Item> menu){
-//        int total = 0;
-//        for(Item i : menu){
-//            total += i.getPrice();
-//        }
-//
-//        return total;
-//    }
+    public int totalOrderCost(ArrayList<Item> menu){
+        int total = 0;
+        for(Item i : menu){
+            total += i.getPrice();
+        }
+
+        return total;
+    }
 
     public void removeFromMenu(String itemName) throws itemNotFoundException {
 
