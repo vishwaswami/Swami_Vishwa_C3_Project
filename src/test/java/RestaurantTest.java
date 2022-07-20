@@ -85,14 +85,14 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-//    @Test
-//    public void totalOrderCostShouldReturn388() {
-//        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
-//        restaurant.addToMenu("Sweet corn soup", 119);
-//        restaurant.addToMenu("Vegetable lasagne", 269);
-//        ArrayList<Item> orderedMenu = new ArrayList<>(restaurant.getMenu());
-//        int orderFinalCost = restaurant.totalOrderCost(orderedMenu);
-//        assertEquals(388,orderFinalCost);
-//
-//    }
+    @Test
+    public void totalOrderCostShouldReturn388() {
+        restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
+        restaurant.addToMenu("Sweet corn soup", 119);
+        restaurant.addToMenu("Vegetable lasagne", 269);
+        ArrayList<Item> orderedMenu = new ArrayList<>(restaurant.getMenu());
+        int orderFinalCost = restaurant.totalOrderCost(orderedMenu);
+        assertEquals(388,orderFinalCost);
+
+    }
 }
